@@ -244,3 +244,19 @@ cargo doc --no-deps
 変換表の構造は [data/README.md](data/README.md) を参照してください。
 
 License: [MIT](./LICENSE)
+
+
+<!-- 
+## Publish
+
+```sh
+1. Update to vX.X.X on cargo.toml and README.md.
+
+2. Run commnads
+cargo test
+cargo publish --dry-run
+git tag vX.X.X
+git push origin --tags
+cargo publish
+```
+-->

@@ -1,0 +1,22 @@
+[package]
+name = "jtc-utils"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Japanese legacy encodings, banking text and mainframe record utilities"
+license = "MIT"
+repository = "https://github.com/hidekatsu-izuno/jtc-utils-rs"
+keywords = ["japanese", "jef", "ebcdic", "zengin", "mainframe"]
+categories = ["encoding", "text-processing"]
+include = ["src/**", "data/**", "build.rs", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE", "examples/**", "tests/**"]
+
+[dependencies]
+encoding_rs = "0.8.35"
+unicode-normalization = "0.1"
+
+[dev-dependencies]
+csv = "1.4"
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
